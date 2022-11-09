@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  faq-chatbot:
+    container_name: sp-qa-bot
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - model-cache:/root/.cache/torch
+      - hf-cache:/root/.cache/huggingface
+    env_file:
+      - .env
+
+volumes:
+  model-cache:
+  hf-cache:

@@ -1,0 +1,558 @@
+
+Because anyone can create a duels server.
+
+
+StrikePractice offers you everything you need for a duels/practice server and much more for an affordable price. The plugin is highly configurable and has many features and good support.
+
+
+
+➡ Duels (1v1), 2v2, Party vs Party, Party Split and Party FFA
+➡ Bot fights (duels and party vs bots)*
+➡ Replay your fights*
+➡ Fully editable kits (build, combo, spleef, bedwars, MLG rush, boxing, skywars, horse, parkour, only bow damage, disable hunger and regen for UHC kits)
+➡ Arena regeneration
+➡ Multiple rounds support! Best of any number of rounds
+➡ Premium matches queue and limit rankeds/unrankeds. Get more donations with this feature!*
+➡ Almost everything is customizable
+➡ Arena selector with arena icons
+➡ Automatic events: 1v1 Tournament, Sumo, Last Man Standing (FFA Event), King of the hill (KOTH) and Juggernaut (1 vs everyone else) with a GUI for staff/VIPs. You can also create other 1v1 tournament-like events by creating specific arenas (e.g spleef event)
+➡ FFA arenas
+➡ Post match inventory view with fight statistics (hits, longest combo, potions thrown, potions missed and potion accuracy)
+➡ MySQL/MariaDB support (all stats, save fights and inventories for the web addon)
+➡Built-in enderpearl cooldown with placeholder, scoreboard, xp bar and above hotbar support
+➡ Kit Editor with multiple saved layouts per kit (players can choose the layout at the start of a fight)
+➡ Colored name tags in fight
+➡ Spectator mode
+➡ Easy setup: automatically generate a kit based on the name with one command: ”/battlekit create <name>” and fully copy arenas with ”/arena copypaste”
+➡ Customizable spawnitems (any item, any command)
+➡ Customizable scoreboard with many placeholders and PlaceholderAPI support
+➡ Lobby and in fight tablist addon (free)
+➡ Open parties and public parties (broadcasted) for streamers, staff, Youtubers and VIPs
+➡ Stats (placeholders, sign stats and /stats)
+➡ Multiple free and paid addons! Leaderboards, website, per kit knockback etc.* (see ”More Information”)
+➡ Multilingual. Players can change their language with /language. Multiple languages already supported.
+➡ Pre-configured and premade kits, spawnitems
+➡ Custom knockback per kit (built in or with a console command*)
+
+Addons and extensions
+PlaceholderAPI – StrikePractice placeholders elsewhere and more placeholders in scoreboard etc.
+StrikeLeaderboards – Show top stats in an inventory
+StrikeTab - Lobby and fight tablists
+LeaderHeads – Supports StrikePractice stats. More information here.
+Website Leaderboards - Contact LegendEffects#7781 on Discord if you're interested in purchasing the addon.
+Check the discord channel for more
+
+PvP Bot
+Note: the bot does not (currently) support 1.9+ combat, combo or build mode.
+Bot requires working version of Citizens. The bot doesn’t yet support combo mode, drinkable potions (splash potions of healing work). It has experimental support for golden apples. You can easily disable PvP Bot with permissions and config.yml or by removing Citizens plugin. With paperspigots, you might need to check the bot knockback in the config.yml before reporting any issues with PvP Bot's knockback.[/SPOILER]
+
+Premium Queue and Match Limits
+Premium queue:
+Give your players an opportunity to purchase premium matches! Give premium matches with "/premiummatches add/set <player> <number>".
+
+How to give extra ranked/unranked matches:
+strikepractice.extrarankeds.(number)
+strikepractice.extraunrankeds.(number)
+
+Matchlimit Commands (limit daily matches per player):
+/matchlimit - "/matchlimit set/add unranked/ranked <player> <number>" to modify match limits. "/matchlimit update <player>" to manually update their matchlimits (for example, after giving matchlimit permissions).
+
+Replay
+Replays require a working version of Citizens. The system saves the important actions (swinning, damage, movements etc. The playback mode will replay them) either during ranked or unranked and ranked fights.
+
+You can easily disable replays by editing the config, removing the permissions or removing the Citizens plugin.
+
+
+For more check the videos or test at the test server: test.strikepractice.ga
+
+
+
+➡ PvP Bot is able to pot and soup and comes with 4 difficulties
+➡ Developer API
+➡ Match link. Send link to your website showing information about the fight.
+➡ Host events with simple GUI (inventory, /events)
+➡ Elo ranks! /ranks
+➡ Golden head - a golden apple named “golden head” or “goldenhead” heals more (configurable)
+➡ Chest access (per kit) to give players access to customize their kits in kiteditor
+➡ Player’s own gamemode they can host party events or duel players (Custom Kit)
+➡ High ping limit in ranked queue games
+➡ Require x kills to join ranked queue (or bypass with a permission)
+➡ Disable hunger with UHC kits (if the kit name contains “uhc”)
+➡ Disable/Allow crafting in fights, building without build kit, dropping items in spawn
+➡ Disable instant death in void and water (for spleef, sumo and skywars)
+➡ Elo rewards (commands)
+➡ Build limit for build kits
+➡ Rematch item (to duel the same player again)
+➡ Fight duration limit
+➡ Per player settings: toggle scoreboard, player hiding, duel requests and language
+➡ Optional lightning effect when a player dies
+➡ Kit Preview (shift click to preview a kit)
+➡ Disable any party gamemode, permissions for party replays and Party vs Bots
+➡ Change combo delay, combo and the bot’s knockback, default and combo knockback
+➡ Change starting ELO, revive elo
+➡ Some basic commands (/night, /day, /report, /ping), can be disabled
+➡ Spectator teleport and leave items
+➡ Stable updates
+➡ Good support (see reviews)
+➡ And more!
+
+Experimental features*
+➡ 1.18-1.19 support is still experimental (the plugin aims to work on any versions with compatibility mode)
+➡ Bring your own items! Duels on Survival/Factions servers. (The plugin will not change/clear player inventories)
+
+*experimental features may sometimes be a bit less stable
+
+config.yml
+messages.yml
+(not up-to-date but gives you the idea)
+
+Still not convinced? There are already many servers using this plugin and here are some with a good number of players.
+
+test.strikepractice.ga
+
+(use the "/sprac" command to see if they still use this plugin)
+
+and a few hundred other servers...
+
+
+
+
+This plugin supports PlaceholderAPI. You can use %strikepractice_placeholder% (For example, %strikepractice_global_elo%) or you can add more placeholders.
+
+The plugin also supports conditional placeholders. Meaning that you can have scoreboard lines that only display in specific states. For example, only if the fight has ended or only if the fight has multiple rounds.
+
+Use "/sprac placeholders" to search for placeholders. More on the documentation page.
+
+
+
+If you’re looking for permissions check “ Documentation ➡ Permissions ➡ Command Permissions”.
+
+See /sprac for a lot of useful commands
+
+List of commands
+
+➡ /spawnitem - Admin command to manage spawnitems.
+➡ /stats - (/statistics, /elo) - See your stats and elos.
+➡ /strikepractice - (/sprac, /practice…) - Check this command before asking “What’s the command to do something” Many useful admin commands. For example fight cancellation (/sprac cancel <player> [reason]), renaming items (/sprac rename &aExample_name), /sprac setediting, /sprac setlobby, stats resetting etc
+➡ /playersettings - (/psettings, /settings) - Change your settings: toggle scoreboard, player hiding at spawn, duel requests and more.
+➡ /replay - (/playback, /previousfights) - See your previous fights if they were recorded.
+➡ /customkit - Manage your custom kit. Use admin command “/customkit items“ to manage what items players can add to their custom kit.
+➡ /arena - (/battlearena) - Manage arenas. Check “Arena Creation” for more information.
+➡ /battlekit - Manage kits. Check “Kit Creation” for more information.
+➡ /previewkit - (/preview) - Command to preview kits. Usually you can shift click a kit to preview it.
+➡ /lms, /juggernaut, /brackets, /koth. Command to manually manage events (e.g manually stop or manually join)
+➡ /spectate - (/spec, /spectator) - Command to spectate current fights.
+➡ /party - (/team) - Command to create and manage your party.
+➡ /duel - (/1v1) - Duel someone, accept duels or manage your duel settings.
+/togglescoreboard - (/sbtoggle, /scoreboardtoggle) - Enable or disable scoreboard.
+➡ /queue - (/unranked, /ranked, /premiumqueue) - Command to join a queue. The corresponding GUI will open. You can also use "/queue [kit]". Good for command NPCs for example.
+➡ /kiteditor - Command to edit your kits. Use /sprac setediting to set the place.
+➡ /matchlimit - "/matchlimit set/add unranked/ranked <player> <number>" to modify match limits. "/matchlimit update <player>" to manually update their matchlimits (for example, after giving matchlimit permissions).
+➡ /premiummatches - give or set the number of player's premium matches
+➡ /botduel - (/pvpbot) - Fight against the PvP Bot.
+➡ /hostevent - Host an event automatically (with broadcast).
+➡ /events – Open GUI to host events (similar to /hostevent but a GUI)
+➡ /ranks - See your current rank & all ranks
+➡ /language - (/lang) -change your language
+➡ /languageitem - (/li) - Admin command to manage language inventory items.
+[/SPOILER]
+
+
+Terms of Service
+By purchasing this plugin or downloading an update you accept the following terms of service:
+No refunds unless you have a very good reason** and contact within 7 days after the purchase.
+You are not allowed to redistribute, leak or share this plugin. One copy per server/Network.
+You are not allowed to decompile or edit the jar file or say that the code or the product belongs to you.
+I am not liable for any damage the product might cause.
+The price may change at any time without notice.
+These terms of service may change at any time without notice.
+You have read the whole post and understood it.
+The plugin may collect some data such as config values or number of players. The data may be used for improving the plugin.
+
+The plugin may not be fully compatible with all plugins that use nametags.
+
+**for example, if a major feature or part of the plugin does not work as stated here and I won't fix it in a moderate time. If you have any questions, please ask before purchasing.
+
+incl. 0% VAT
+(below threshold)
+
+Not able to download the plugin after purchasing? Contact me here or on discord!
+
+The plugin utilizes bStats to collect anonymous statistics (added in version 2.6.9)
+https://bstats.org/plugin/bukkit/StrikePractice
+
+
+Need help? FAQ? Support?
+Join Discord Support & Community Channel
+
+The source code can be purchased for 120€ (no reselling, one server/network and no refunds. Contact me.)
+
+About to post a review?
+Thanks, but please do not post any issues as a review! If you have any errors, problems, bugs just private message or use the "discussion" page.
+
+
+Looking for FAQs, addons and extensions or support?
+Join the Discord Server!
+
+
+The plugin requires Java 8. To be able to use PvP Bot and replay features you must have a working version of Citizens.
+
+If the kit's inventory is empty use /battlekit setinv <kit name>!
+
+
+If you’re looking for permissions check “Permissions ➡ Command Permissions”.
+
+Use strikepractice.* to give all StrikePractice permissions (including admin commands).
+
+By default, players should have permission to all commands they need. If you want to remove their access to something simply give them negative permission (-strikepractice.permission or false, depending on your permissions plugin).
+
+Command Permissions:
+
+[SPOILER="Command permissions"]
+strikepractice.stats ➡ /Stats
+strikepractice.language ➡ /language
+strikepractice.playersettings ➡ /playersettings
+strikepractice.playback ➡ /playback
+strikepractice.fightinfo ➡ /fightinfo (clickable inventories)
+strikepractice.previewkit ➡ /previewkit
+strikepractice.togglescoreboard ➡ /togglescoreboard
+strikepractice.party ➡ /party
+strikepractice.spectate ➡ /spec or /spectate
+strikepractice.kiteditor ➡ /kiteditor (access to kit editor)
+strikepractice.duel ➡ /duel
+strikepractice.botduel ➡ /botduel (access to pvp bot)
+strikepractice.customkit  ➡ /customkit
+strikepractice.premiumqueue ➡ /premiumqueue
+strikepractice.queue  ➡ /queue (/ranked and /unranked)
+strikepractice.lms.command ➡ /lms (only join and leave)
+strikepractice.juggernaut.command ➡ /juggernaut (only join and leave)
+strikepractice.brackets.command ➡ /brackets (only join and leave)
+strikepractice.koth.command ➡ /koth (only join and leave)
+strikepractice.admin ➡ /spawnitems, /languageitem, full access to /strikepractice, /arena, /battlekit
+strikepractice.hostevent ➡ Permission to use /hostevent, all events have their own permissions (strikepractice.hostevent.<event name> or strikepractice.hostevent.*). NOTE: "strikepractice.hostevent" is always required!
+strikepractice.hostevent.anykit ➡ Permission to use "/hostevent <event> [kit name]" (only lms, brackets and koth)
+strikepractice.hostevent.brackets ➡ Permission to host brackets with “/hostevent brackets”.
+strikepractice.hostevent.juggernaut ➡ Permission to host juggernaut with “/hostevent juggernaut <random or player name>”.
+strikepractice.hostevent.lms ➡ Permission to host lms with “/hostevent lms”.
+strikepractice.hostevent.koth ➡ Permission to host koth with “/hostevent koth”.
+[/SPOILER]
+
+Other Permissions:
+
+[SPOILER="Other permissions"]
+
+strikepractice.staff ➡ Basic staff member permission (e.g. <staff_online> placeholder)
+strikepractice.admin ➡ Basic admin permission (kit, arena creation, admin commands, /sprac)
+strikepractice.mapselector ➡ Allow selecting map
+strikepractice.cooldownbypass ➡ Bypass queue cooldowns (if enabled)
+strikepractice.brackets.host ➡ Permission to host a brackets event
+strikepractice.juggernaut.host ➡ Permission to host a juggernaut event
+strikepractice.lms.host ➡ Permission to host an LMS event
+strikepractice.koth.host ➡ Permission to host a KOTH event
+strikepractice.publicparty ➡ Permission to host a public party
+strikepractice.partylimit ➡ Permission to change the party player limit
+strikepractice.openparty ➡ Permission to make your party open for anyone to join
+strikepractice.customkit.armor ➡ Permission to change armor of the player's custom kit/gamemode
+strikepractice.customkit.combo ➡ Permission to toggle combo mode of the player's custom kit
+strikepractice.customkit.horse ➡ Permission to toggle horse mode of the player's custom kit
+strikepractice.customkit.build ➡ Permission to toggle build mode of the player's custom kit
+strikepractice.customkit.bow ➡ Permission to toggle only bow mode of the player's custom kit
+strikepractice.update ➡ Notify updates
+strikepractice.partyplayback ➡ Permission to host party playbacks
+strikepractice.partybots ➡ Permission to host party vs bots
+strikepractice.extrarankeds.<number> and strikepractice.extraunrankeds.<number> ➡ Add ranked or unranked matches
+[/SPOILER]
+
+
+
+
+This plugin supports PlaceholderAPI. You can use %strikepractice_placeholder% (For example, %strikepractice_global_elo%) or you can add more placeholders.
+
+You may use [display=false/true] function in scoreboard. For example, a scoreboard line with [display=<sumo_started>] will only be displayed if the sumo has started. Use display=! to display when it’s false and not display when it’s true. For example [display=!<sumo_started>] will only display the line when sumo hasn’t started.
+
+NEW: Use "/sprac placeholders" to search for available placeholders on your server.
+
+
+[SPOILER="Leaderboards/Top Stats"]
+
+Placeholders for top 10: <top_[stats][number]> and <top_[stats][number]_value>.
+
+Example: Top 3 with "debuffelo" kit
+- #1<top_elo_nodebuffelo1>: <top_elo_nodebuffelo1_value>
+- #2<top_elo_nodebuffelo2>: <top_elo_nodebuffelo2_value>
+- #3<top_elo_nodebuffelo3>: <top_elo_nodebuffelo3_value>
+
+
+With PlaceholderAPI:
+
+- #1%strikepractice_top_elo_nodebuffelo1%: %strikepractice_top_elo_nodebuffelo1_value%
+
+- #2%strikepractice_top_elo_nodebuffelo2%: %strikepractice_top_elo_nodebuffelo2_value%
+
+- #3%strikepractice_top_elo_nodebuffelo3%: %strikepractice_top_elo_nodebuffelo3_value%
+
+[/SPOILER]
+
+You can see a list of placeholders here (PlaceholderAPI is not required):
+
+
+[CODE]
+
+
+Common placeholders:
+
+<players> ➡ Players online
+<next_event_name> ➡ Name of next automatic event
+<next_event_time> ➡ When next automatic event will start
+<in_fight> ➡ Players fighting
+<in_queue> ➡ Players in queue
+<in_ranked_queue> ➡ Players in ranked queue
+<in_unranked_queue> ➡ Players in unranked queue
+<online_staff> ➡ Staff online
+<tps> ➡ Current ticks per second
+<time> ➡ Current server time
+
+Per player (or event) placeholders:
+
+<ping> ➡ Player’s current ping
+<kills> ➡ Player’s kills
+<deaths> ➡ Player’s deaths
+<premiummatches> ➡ Premium matches left
+<brackets_wins> ➡ Player’s brackets event wins
+<lms_wins> ➡ Player’s last man standing event wins
+<party_vs_party_wins> ➡ Player’s Party vs Party wins
+<player> ➡ Player’s name
+<custom_name> ➡ Player’s custom name
+<display_name> ➡ Player’s display name
+<world> ➡ Player’s current world
+<global_elo> ➡ Player’s current global elo
+<elo_rank> ➡ Player's elo rank
+<elo_kit> ➡ Player’s elo of the kit (for example <elo_rankedbuilduhc>)
+<party_members> ➡ Number of members in the player’s party
+<party_owner> ➡ Owner of the player’s party or “None” if not found
+<enderpearl_cooldown> ➡ Player’s current enderpearl cooldown or “--” if the player is no longer on cooldown
+<is_enderpearl_cooldown> ➡ true if the player is on cooldown, otherwise false
+<arena> ➡ Player’s current arena or “None” if the player is not fighting
+<kit> ➡ Player’s current kit or “None” if the player is not fighting
+<raw_arena> ➡ Raw name of the player’s arena (not display name)
+<raw_kit> ➡ Raw name of the player’s kit (not icon name)
+<ranked> ➡ “true” if the player’s current queue/fight is ranked, otherwise “false”
+<is_cooldown_(tag)> ➡ ”true” if the player is on cooldown. Tag can be ”sumo” or “brackets” for example.
+<cooldown _(tag)> ➡ Duration left of the cooldown. Tag can be ”sumo” or “brackets” for example.
+<duration> ➡ Duration of the player’s current fight or brackets 1v1
+<total_duration> ➡ Total duration of the player’s current event or “--:--” if the event hasn’t started
+<opponent> ➡ Player’s 1v1 opponent.
+<opponent_ping> ➡ Opponent's ping
+<opponent_elo>➡ Opponent's elo
+<cps> ➡ Clicks per second
+<opponent_cps> ➡ Opponent’s clicks per second
+<total_rounds> ➡ Total rounds of the fight
+<round> - current round ➡ Current round
+<own_wins> ➡ Rounds won
+<opponent_wins> ➡ Opponent’s rounds won
+<is_bestof> ➡ true/false whether the match is best of x rounds
+<build> ➡ ”true” if the kit is build
+<is_ffa> ➡ true if the player is in a ffa arena, otherwise false
+<is_party> ➡ true if the player is in a party, otherwise false
+<ended> ➡ true if the current fight has ended, otherwise false
+<ffa_players> ➡ Number of players in the ffa arena
+<ffa_fight_total> ➡ Players in FFA fights (all arenas)
+<ffa_rollback> ➡ Time till next ffa arena rollback
+<sumo/juggernaut/koth/lms/brackets_started> ➡ Event has started , true or false
+<enemy_team_members> ➡ Number of the player’s enemy team members in Party Vs Bots, Party Vs Party or Party Split
+<own_team_members> ➡ Number of the player’s own team members in Party Vs Bots or Party Split
+<enemy_team_left> ➡ Number of alive members in the player’s enemy team in Party Vs Bots, Party FFA, Party Split or Party vs Party
+<own_team_left> ➡ Number of alive members in the player’s own team in Party Vs Bots, Party FFA, Party Split or Party Vs Party
+<search_range1> ➡ Player’s current queue search starting range or “➡” if it’s an unranked kit
+<search_range1> ➡ Player’s current queue search end range or “-” if it’s an unranked kit
+<queuetype> ➡ "Ranked" or "Unranked" while in queue.
+<wait_time> ➡ Time the player has waited in queue
+<current_fight_player1> ➡ Player in the current brackets or sumo, or “--” if the event hasn’t started yet
+<current_fight_player2> ➡ The other player in the current brackets or sumo, or “--”...
+<player1_ping> and <player2_ping> ➡ The brackets or sumo players' pings.
+<player1_cps> and <player2_cps> ➡ The brackets or sumo players' clicks per second.
+<players_left> ➡ Players left in the tournament
+<total_players> ➡ Total players in the tournament
+<estimated_time_left> ➡ Estimated duration of the tournament
+<alive> ➡ Players alive in brackets or last man standing event
+<timer> ➡ KOTH current capping time
+<capper> ➡ The capper in KOTH event
+<capper_team> ➡ The capping team in KOTH event
+<juggernaut> ➡ The juggernaut in Juggernaut event
+<limits_update> ➡ When match limits will update again (HH:mm)
+<rankeds_left> ➡ Number of ranked matches left
+<elo_rank> ➡ Player's elo rank (if enabled)
+<unrankeds_left> ➡ Number of unranked matches left
+<is_boxing> ➡ Use [display=<is_boxing>] to display in boxing only
+<hits> ➡ How many times you have hit someone
+<hits_opponent> ➡ How many times opponent has hit
+The following placeholders require SQL database, legacy-fight-format: false and save-all-fights: true
+<wins>, <wins_kitname> ➡ Number of wins
+<losses>, <losses_kitname> ➡ Number of losses
+[/CODE]
+
+
+How to create an arena?
+
+Type “/arena” to see all arena commands.
+
+Use all commands without “, “<” and “>”
+
+Type "/sprac arenasworld" to teleport to the arenas world.
+Type “/arena create <arena name>” to create a new arena.
+You must set the pos1, pos2, and the center.
+Use “/arena pos1 <arena name>” to set the first spawn position at your current position.
+Use “/arena pos2 <arena name>” to set the second spawn position at your current position.
+Use “/arena center <arena name>” to set the center position at your current position.
+Build arena creation: Use “/arena build <arena name>” to toggle the build mode. Build kits will only go to build arenas and non-build kits will only go to non-build arenas by default
+Tip: After creating a new arena, set "/arena corner1 <arena>" and "/arena corner2 <arena>" so you can use "/arena copypaste <arena>" to clone the arena. Note that this can not be undone.
+[SPOILER="Advanced"]
+
+Advanced users:
+
+Use  “/arena kits <arena name> <kit name>” to specify a kit. After doing this only specified kits will go to this arena and no other kit will lead there and the specified kits will only go to the arenas that have the kit specified. To make a spleef arena type  “/arena kits <arena> <spleef kit>”.
+
+You can also set “/arena corner1 <arena name>” and “/arena corner2 <arena name>”. The corners are used for some features but are not required. These locations should be in opposite corners and the other should be at the bottom of the arena and the other at build limit or at the top of the arena.
+[/SPOILER]
+
+
+How to setup a FFA arena?
+1.   Create a normal arena (follow the arena creation tutorial)
+2.   Use /arena kits to specify the kit.
+3.   Use /arena ffa. The arena will no longer be used for other fights.
+4.   Restart the server and use /<arena name> to join the arena.
+Note the command is not actually a real command.
+
+
+
+How to setup a kit?
+
+Type “/battlekit” to see all kit commands.
+
+Use all commands without "<" and ">"
+
+Use “/battlekit create <kit name>” to create a new kit. If possible, the system will automatically create a kit with inventory and armor based on the kit's name. You can add “uhc” in the name to disable health regeneration or "sumo" and water will kill instantly.
+If you don't like the kit it created automatically use the following commands:
+Use “/battlekit setinv <kit name>” to set the inventory, armor and potion effects.
+Use “/battlekit seticon <kit name>” to set the kit’s icon. Hold the item in your hand. You can rename the item in your hand with “/sprac rename &cExample_name”. “_” will be replaced with a whitespace.
+Use “/battlekit build <kit name>” to toggle whether the kit is a build kit.
+You can easily create a ranked kit from unranked kit with “/battlekit rankedcopy <kit to copy> 1v1”.
+Premium Queue: Use "/battlekit types premium <kit name>" to add the kit to the premium queue inventory.
+
+Advanced kit options:
+
+"/Battlekit bedwars <kit name>" to enable bedwars. Place a bed near both spawn points
+"/Battlekit healthbar <kit>" to enable health bar under nametags.
+You can use “/battlekit combo <kit>” (players can be hit a lot faster).
+You can use “/battlekit horse <kit>” (players will spawn with a horse).
+You can use “/battlekit bow <kit>” (players can’t pvp, only projectiles are allowed, good for spleef kits).
+If you want you can make the kit editable with “/battlekit editable <kit>”
+Use "/battlekit stickspawn <kit>" if you don't want players to leave spawn before countdown has ended (for example sumo).
+Use “/battlekit chestaccess <kit>” to toggle whether people can add new items when editing the kit.
+Use “/battlekit types <kit> <type>” to specify types. <type> can be: any, duel, bot, queue, party-ffa, party-split or party-vs-party. You can also use "/battlekit types <kit> !bot" to add all types except bot.
+To allow breaking more blocks (spleef for example) type “/battlekit extramaterial <kit>“ and hold the item in your hand. For example, “/battlekit extramaterial spleef” and hold a snowblock.
+Use /battlekit rankedcopy instead! (Or use “/battlekit mergeeditedkits <kit name> <some editable kit>” if you want to have one editable kit for two or more kits. When giving <kit name> the <some editable kit>’s edited version will load (or default if the player hasn’t edited the kit). Example: “/battlekit mergeeditedkits potionelo potion” and be sure “potion” is editable. This will result with one editable kit for both ranked and unranked kits.)
+[/SPOILER]
+
+
+How to setup a kit editor?
+
+You can change the lines in the config.
+Use “/sprac setediting” to set the kit editing place.
+Place an anvil near the editing place. Right clicking it will open the GUI for editing kits.
+Place a door near the editing place. You can right click the door to exit the kit editor.
+You can place a chest at the editing place to give players access to take more items (for example more speed potions). This requires that the kit has “chestaccess” (“/battlekit chestaccess <kit name>”)
+Optionally you can also:
+Place a sign and type “[Reset Kit]” in the first line. Players can click this sign to reset their kit.
+Place a sign and type “[Leave Editor]” in the first line. Players can click this sign to teleport to the spawn.
+The lines can be edited in the config.yml and use the config's lines
+[SPOILER="Legacy Kit Editor"]
+To only allow one edit per kit set "legacy-kit-editor: true" in the config.yml. Place a sign and type “[Save Kit]” in the first line. Players can click this sign to save their kit.
+[/SPOILER]
+[/SPOILER]
+
+
+[SPOILER="Sign Stats"]
+Place a sign.
+The first line must always be '[stats]'.
+Choose the other line:
+
+“kills” for kills
+“deaths' for deaths
+“lms' for last man standing event wins
+“party” for party vs party wins
+“brackets” for brackets event wins
+“elo” and third line: the name of the kit
+NOTE: You can only have one sign for each statistic
+[/SPOILER]
+
+You can use Holographic display with PlaceholderAPI for leaderboards.
+StrikeTab allows top stats in the tablist.
+
+Website Leaderboards
+
+
+
+Replace <event> with the event you are hosting. (LMS, brackets, juggernaut or KOTH, e.g /lms, /brackets).
+
+Hosting events:
+Simply /events (easy for VIPs)
+or use "/hostevent <event>" to automatically open the event, broadcast and start the event. If you have "strikepractice.hostevent.anykit" permission you can use "/hostevent <event> [kit name]" (only lms, brackets and koth)
+
+Players:
+Players can join an open event with “/<event> join” and leave it with “/<event> leave” or by clicking the broadcast message.
+
+[SPOILER="How to setup & Automatic Events"]
+Automatic Events
+
+Setting up automatic events should not be difficult, here's a copy from the config.yml. You can add events and change the messages, and specify the kits that will be used in automatic events.
+
+[code]
+automatic-events:
+ broadcast:
+  #How often should the message be sent
+  delay: 10
+  #How many times should the message be sent
+  times: 5
+  #The messages for all events
+  lms: '&cLMS event is starting soon! Type /lms join!'
+  brackets: '&cBrackets event is starting soon! Type /brackets join!'
+  juggernaut: '&cJuggernaut event is starting soon! Type /juggernaut join!'
+  koth: '&cKoth event is starting soon! Type /koth join!'
+ #Default kits when hosting an automatic event
+ juggernaut-kit: gapple
+ juggernaut-player-kit: potion
+ koth-kit: potion
+ lms-kit: soup
+ brackets-kit: potion
+ sumo-kit: sumo
+ # Use "times: []" and remove the scheduled times under it to disable
+ times:
+ #Format like this: time:lms (for example 15:30:lms)
+ #LMS, koth, brackets, juggernaut
+  - '15:30:lms'
+[/code]
+
+Sumo Event
+Main command to manage sumo is “/sumo”. Before you can start a sumo event you should create a new arena named “sumoevent” (see “Arena Creation” for help).
+After that, you must set the sumo lobby with “/sumo setlobby”.
+
+Brackets Event (1v1 tournament)
+Main command to manage brackets is “/brackets”. Before you can start a brackets event you should create a new arena named “brackets” (see “Arena Creation” for help).
+
+After that, you must set the brackets lobby with “/brackets setlobby”.
+
+Last Man Standing Event
+Before you can start an LMS (last man standing, FFA event) you must set the spawn position where players will be teleported. You can set the position with “/lms setspawn”.
+
+King of The Hill Event
+Before you can start a KOTH (king of the hill) event you must do the following:
+Use “/koth spawn1” to set the team1’s spawn.
+Use “/koth spawn2” to set the team2’s spawn.
+Use “/koth corner1” to set the capping area.
+Use “/koth corner2” to set the capping area. These two corner positions should be in opposite corners and the other under the area and the other above the area.
+Juggernaut Event
+
+Before you can a start juggernaut event you must set the spawn point with “/juggernaut setspawn”. Juggernaut can be started with “/juggernaut start <player> <juggernaut’s kit> <other players’ kit>“ or  “/juggernaut start -random <juggernaut’s kit> <other players’ kit>“ which will select the juggernaut randomly from players who have done “/juggernaut join”.
+
+Follow the common tutorial under “PvP Events” for more help about events.
