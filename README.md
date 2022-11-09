@@ -1,10 +1,13 @@
 # SP QA BOT
 StrikePractice (a Minecraft plugin) question-answer bot was an experimental Discord support bot.
-The bot answered questions about StrikePractice and its features using modern language models.
+The bot answered questions about StrikePractice and its features using modern language models without training (zero shot question 
+answering).
 
 ![Example screenshot](screenshot.png)
+
 The answer to "How do I make a kit editable?" is incorrect, other answers in this demo were correct (although, they were quite simple 
-questions).
+questions).\
+The bot has not seen any of the questions before, it has only seen the documentation [input_docs.txt](input_docs.txt).
 
 ## How it works
 1. The bot listens to messages Discord server
